@@ -12,7 +12,7 @@ Simulations adjusting the bone density over time were run by several groups, whe
 leading to changes in bone elastic modulus, and that changed modulus lead to changes in the local stress state as the simulations progressed.
 
 These adaptive time-stepping simulations used finite elment models, and the simulations lead to density distributions that approached a continuous distribution, 
-but that diverged to states where adjacent individual fininte elements were either fully dense or fully empty - the density distribution "checkerboarded".
+but that diverged to states where adjacent individual finite elements were either fully dense or fully empty - the density distribution "checkerboarded".
 
 Since the resulting "checkerboarded" simulations depended on the pattern of the finite elements used in the models, this reslult had some conceptual problems.
 

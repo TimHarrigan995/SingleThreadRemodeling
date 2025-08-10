@@ -5,7 +5,7 @@ and to adjust that density to mimic the process of bone becoming more dense at a
 This is the standard "Wolff's law" hypotheses.
 
 The (continuum-level) mechanical factor that stimulates bone density changes at the time was 
-assumed to be the strain energy density divided by the mass fraction of calcified tissue.
+assumed to be the strain energy density divided by the volume fraction of calcified material withing the spongy bone tissue.
 Physically this corresponds to using the average strain energy density in the solid phase of the bone tissue.
 
 Simulations adjusting the bone density over time were run by several groups, where density is increased or decreased, 

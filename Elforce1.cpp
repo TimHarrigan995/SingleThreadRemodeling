@@ -147,22 +147,23 @@ extern int blalcdone,numrel;
 
 		  index=c3*(ndoftot+1);
 		  rateptr[rind] += alpha[c3]*
-				  elstend(eldof,elstf,&loadptr[index],maxdel,volume,elnpc);
+				  elstend(eNodDF,s,&loadptr[index],maxdel,volume,elnpc);
 
 		  elfoff = rind*netmaxdel + c3*netmaxdel*numrel;
 
-		  eldisdot(eldof,elstf,&loadptr[index],maxdel,elnodf+elfoff);
+		  eldisdot(eNodDF,s,&loadptr[index],maxdel,elnodf+elfoff);
 
-/* printf("rind= %d,rateptr[rind]= %lf,eldiag[rind]= %lf\n",
-        rind,rateptr[rind],eldiag[rind]); */
+ //printf("rind= %d,rateptr[rind]= %lf\n",
+  //     rind,rateptr[rind]);
+
 	  } //for (c3=0 .. nlcase
 
   	} /* if(eldat[offset+3]>=0 ...  */
   } //for(c2=0...
 
 //free(elstf);
-delete[] elstf;
-elstf=nullptr;
+delete[] s;
+s=nullptr;
 
 } /* end of routine */
 

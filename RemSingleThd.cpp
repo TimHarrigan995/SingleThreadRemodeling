@@ -432,7 +432,7 @@ for(c=0;c<nlcase;c++){
 
 
 //loadptr= calloc(ndoftot, sizeof(double));
-loadptr = new double[ndoftot];
+loadptr = new double[ndoftot]();
 if(loadptr == NULL)printf("load allocation failed (main)\n");
 
 
@@ -838,7 +838,7 @@ fflush(stdout);
 
 solstat=plinsolv(stifptr,dgamptr-1,remdiags-1,netact+1,workptr,1,output);
 
-  printf("density evolution system is unstable if negative pivots are found\n");
+  printf("Done: density evolution system is unstable if negative pivots are found\n");
 
   printf("Otherwise,the system is apparently stable - try smaller time steps\n");
 
@@ -1203,7 +1203,7 @@ if(elload == NULL){
 /* get memory for rows of (nonsymmetric) Euler Backward matrix */
 
 //ebmatrow = calloc(numrel,sizeof(double));
-ebmatrow = new double[numrel];
+ebmatrow = new double[numrel]();
 
 if(ebmatrow == NULL){
 
